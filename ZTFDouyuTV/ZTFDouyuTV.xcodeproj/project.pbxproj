@@ -71,10 +71,10 @@
 		FEA134261DB35BF700A7C2F2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FEA134271DB35BF700A7C2F2 /* Follow(关注) */,
-				FEA134281DB35BF700A7C2F2 /* Home(主页) */,
-				FEA134291DB35BF700A7C2F2 /* Live(直播) */,
 				FEA1342A1DB35BF700A7C2F2 /* Main(主要) */,
+				FEA134281DB35BF700A7C2F2 /* Home(主页) */,
+				FEA134271DB35BF700A7C2F2 /* Follow(关注) */,
+				FEA134291DB35BF700A7C2F2 /* Live(直播) */,
 				FEA1342B1DB35BF700A7C2F2 /* My(个人主页) */,
 			);
 			path = Classes;
