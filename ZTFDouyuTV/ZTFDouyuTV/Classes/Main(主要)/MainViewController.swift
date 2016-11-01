@@ -13,30 +13,36 @@ class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.tabBar.isTranslucent = false
         allChildViewController()
         
         
         
     }
+
+
+}
+
+extension MainViewController {
+
     
-    private func allChildViewController()  {
-            
-            addOne(vc: HomeViewController(), tit: "主页", image:  #imageLiteral(resourceName: "tabHome"), selImage: #imageLiteral(resourceName: "tabHomeHL"))
-            addOne(vc: LiveViewController(), tit: "直播", image: #imageLiteral(resourceName: "tabLiving"), selImage: #imageLiteral(resourceName: "tabLivingHL"))
-            addOne(vc: FollowViewController(), tit: "关注", image: #imageLiteral(resourceName: "tabFocus"), selImage: #imageLiteral(resourceName: "tabFocusHL"))
-            addOne(vc: MyViewController(), tit: "个人", image: #imageLiteral(resourceName: "tabMine"), selImage: #imageLiteral(resourceName: "tabMineHL"))
-            
-        }
+    fileprivate func allChildViewController()  {
         
+        addOne(vc: HomeViewController(), tit: "主页", image:  #imageLiteral(resourceName: "tabHome"), selImage: #imageLiteral(resourceName: "tabHomeHL"))
+        addOne(vc: LiveViewController(), tit: "直播", image: #imageLiteral(resourceName: "tabLiving"), selImage: #imageLiteral(resourceName: "tabLivingHL"))
+        addOne(vc: FollowViewController(), tit: "关注", image: #imageLiteral(resourceName: "tabFocus"), selImage: #imageLiteral(resourceName: "tabFocusHL"))
+        addOne(vc: MyViewController(), tit: "个人", image: #imageLiteral(resourceName: "tabMine"), selImage: #imageLiteral(resourceName: "tabMineHL"))
+        
+    }
+    
     
     
     //添加一个子控制器
     private func addOne(vc : UIViewController , tit : String , image : UIImage , selImage : UIImage) {
         
-        
         let nc = NCViewController(rootViewController: vc)
         
-        vc.title = tit
+        vc.tabBarItem.title = tit
         
         vc.tabBarItem.image = image
         vc.tabBarItem.selectedImage = selImage
@@ -46,9 +52,6 @@ class MainViewController: UITabBarController {
         
         
     }
-
-   
-
 }
 
 
