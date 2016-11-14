@@ -12,6 +12,19 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    //MARK: - 懒加载属性
+    
+    fileprivate var pageTitView : pageHeadView = {
+        
+    let titFrame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 40)
+    let names = ["zhu","hah","hahha"]
+    let titView = pageHeadView.init(frame: titFrame, names: names)
+        titView.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        
+    return titView
+        
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +32,7 @@ class HomeViewController: UIViewController {
         
         self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
-    
+        self.view.addSubview(pageTitView)
         
     }
   
@@ -36,6 +49,8 @@ extension HomeViewController {
         setupNC()
         
     }
+    
+    
     
     private func setupNC() {
         

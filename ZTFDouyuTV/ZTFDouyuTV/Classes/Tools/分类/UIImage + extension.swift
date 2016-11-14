@@ -21,7 +21,7 @@ extension UIImage {
         context!.fill(rect)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+    
         return image!
 
     }

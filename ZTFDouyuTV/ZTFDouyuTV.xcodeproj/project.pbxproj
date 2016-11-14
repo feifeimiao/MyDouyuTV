@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE82B76C1DD64515000964CF /* pageHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE82B76B1DD64515000964CF /* pageHeadView.swift */; };
 		FEA134151DB359DF00A7C2F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA134141DB359DF00A7C2F2 /* AppDelegate.swift */; };
 		FEA1341C1DB359DF00A7C2F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA1341B1DB359DF00A7C2F2 /* Assets.xcassets */; };
 		FEA1342F1DB3643D00A7C2F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA1342E1DB3643D00A7C2F2 /* MainViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE82B76B1DD64515000964CF /* pageHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pageHeadView.swift; sourceTree = "<group>"; };
 		FEA134111DB359DF00A7C2F2 /* ZTFDouyuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTFDouyuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA134141DB359DF00A7C2F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEA1341B1DB359DF00A7C2F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				FEA134301DB368D000A7C2F2 /* HomeViewController.swift */,
+				FE82B76B1DD64515000964CF /* pageHeadView.swift */,
 			);
 			path = "Home(主页)";
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				FEA134151DB359DF00A7C2F2 /* AppDelegate.swift in Sources */,
 				FEA134331DB3694400A7C2F2 /* NCViewController.swift in Sources */,
 				FEA5A8EA1DB809F50028BB82 /* UIImage + extension.swift in Sources */,
+				FE82B76C1DD64515000964CF /* pageHeadView.swift in Sources */,
 				FEA5A8E81DB7FF540028BB82 /* UINavigationItem+Extention.swift in Sources */,
 				FEA1342F1DB3643D00A7C2F2 /* MainViewController.swift in Sources */,
 				FEA134391DB3E95100A7C2F2 /* MyViewController.swift in Sources */,
